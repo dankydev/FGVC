@@ -88,13 +88,13 @@ def parse_arges():
     parser.add_argument('--res_shape', type=int, nargs='+',
                         default=None)
     parser.add_argument('--pretrained_model', type=str,
-                        default='/home/chengao/Weight/imagenet_deepfill.pth')
+                        default='C:\\Users\\Daniele\\Documents\\Bouncyloop\\FGVC\\weight\\imagenet_deepfill.pth')
     parser.add_argument('--test_img', type=str,
-                        default='/work/cascades/chengao/DAVIS-540/bear_540p/00000.png')
+                        default='C:\\Users\\Daniele\\Documents\\Bouncyloop\\FGVC\\data\\tennis\\00000.png')
     parser.add_argument('--test_mask', type=str,
-                        default='/work/cascades/chengao/DAVIS-540-baseline/mask_540p.png')
+                        default='C:\\Users\\Daniele\\Documents\\Bouncyloop\\FGVC\\data\\tennis_mask\\00000.png')
     parser.add_argument('--output_path', type=str,
-                        default='/home/chengao/res_00000.png')
+                        default='C:\\Users\\Daniele\\Documents\\Bouncyloop\\FGVC\\result\\tennis_removal\\final_results\\res_00000.png')
 
     args = parser.parse_args()
 

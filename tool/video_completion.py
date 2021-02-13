@@ -350,8 +350,9 @@ def video_completion(args):
     try:
         from spatial_inpaint import spatial_inpaint
         from frame_inpaint import DeepFillv1
-        deepfill = DeepFillv1(pretrained_model='/home/chengao/Weight/imagenet_deepfill.pth', image_shape=[imgH, imgW])
-    except:
+        deepfill = DeepFillv1(pretrained_model='C:\\Users\\Daniele\\Documents\\Bouncyloop\\FGVC\\weight\\imagenet_deepfill.pth', image_shape=[imgH, imgW])
+    except Exception as e:
+        print(e)
         print('Please switch to Pytorch 0.4.0')
         return
 
@@ -501,8 +502,8 @@ def video_completion_seamless(args):
     try:
         from spatial_inpaint import spatial_inpaint
         from frame_inpaint import DeepFillv1
-        deepfill = DeepFillv1(pretrained_model='/home/chengao/Weight/imagenet_deepfill.pth', image_shape=[imgH, imgW])
-    except:
+        deepfill = DeepFillv1(pretrained_model='C:\\Users\\Daniele\\Documents\\Bouncyloop\\FGVC\\weight\\imagenet_deepfill.pth', image_shape=[imgH, imgW])
+    except Exception as e:
         print('Please switch to Pytorch 0.4.0')
         return
 
